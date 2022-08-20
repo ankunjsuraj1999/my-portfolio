@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankunj Suraj - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c6953e74b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Ankunj</span> Suraj</h1>
+            </div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur alias laborum beatae possimus doloribus vitae pariatur molestias, minus nostrum consequatur deleniti assumenda eius asperiores, saepe voluptate vel inventore, quae maxime?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>Web Designer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ui/ux designer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <a href="images/ANKUNJ's Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEb Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit inventore, ipsam necessitatibus hic iure amet similique natus fugit aut veritatis quo repudiandae nihil facere delectus asperiores id obcaecati quae pariatur.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>WEb Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit inventore, ipsam necessitatibus hic iure amet similique natus fugit aut veritatis quo repudiandae nihil facere delectus asperiores id obcaecati quae pariatur.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>ui/ux</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit inventore, ipsam necessitatibus hic iure amet similique natus fugit aut veritatis quo repudiandae nihil facere delectus asperiores id obcaecati quae pariatur.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Math a Fun Game Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#"><i class="fa-solid fa-code-compare"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Math a Fun Game Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list" id="work-list1">
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Login Signup Pages</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem maxime dolores officiis itaque iusto ullam? Fugiat aperiam nobis exercitationem perferendis porro, eius atque corporis totam quos cum qui animi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a id="btn3" class="btn" href="#portfolio" onclick="expand()">See more..</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ankunjsuraj1999@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7488139652</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/ANKUNJ's Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Ankunj Suraj. </p>
+        </div>
+    </div>
+    <a href="#" class="move-up"><i class="fa-solid fa-angle-up"></i></a>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        var expand1 = document.getElementById("work-list1");
+        var name = document.getElementById("btn3");
+        function expand(){
+            if(expand1.style.display === "grid"){
+                expand1.style.display="none";
+            }
+            else{
+            expand1.style.display="grid";
+            name.innerHTML="See less";
+            }
+            
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
