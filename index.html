@@ -7,6 +7,29 @@
     <title>Ankunj Suraj - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7c6953e74b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('jcGwn_RR0atT8uuR3');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <div id="header">
@@ -213,11 +236,11 @@
                     <a href="images/ANKUNJ's Resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form method="POST" action="form.php">
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="message" id="" rows="6" cols="24" placeholder="Your Message"></textarea>
-                        <button value="send" type="submit" class="btn btn2">Submit</button>
+                    <form id="contact-form">
+                        <input type="text" id="fullname" name="name" placeholder="Your name" required>
+                        <input type="email" id="email_id" name="email" placeholder="Your email" required>
+                        <textarea name="message" id="message" rows="6" cols="24" placeholder="Your Message"></textarea>
+                        <button value="send" onclick="SendMail()" type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -264,13 +287,20 @@
             else{
             expand1.style.display="grid";
             name.innerHTML="See less..";
+            }    
+        } 
+    </script>
+    <script>
+        function SendMail(){
+            var params = {
+                from_name : document.getElementById("fullname").value,
+                email_id : document.getElementById("email_id").value,
+                message : document.getElementById("message").value
             }
-            
-            
+            emailjs.send("service_vaycq3s", "template_mrf9kxq", params).then(function(res) {
+                        alert("success" + res.status);
+                    })
         }
-        
-        
-        
     </script>
 </body>
 </html>
