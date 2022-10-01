@@ -11,7 +11,7 @@
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
-            emailjs.init('jcGwn_RR0atT8uuR3');
+            emailjs.init('eme9mzg9vwqRd0OpV');
         })();
     </script>
     <script type="text/javascript">
@@ -186,7 +186,6 @@
                         <input type="email" id="email_id" name="email" placeholder="Your email" required>
                         <textarea name="message" id="message" rows="6" cols="24" placeholder="Your Message"></textarea>
                         <button value="send" onclick="SendMail()" type="submit" class="btn btn2">Submit</button>
-                    
                     </form>
                 </div>
             </div>
@@ -243,7 +242,7 @@
                 email_id : document.getElementById("email_id").value,
                 message : document.getElementById("message").value
             }
-            emailjs.send("service_vaycq3s", "template_mrf9kxq", params).then(function(res) {
+            emailjs.send("service_wo0jphm", "template_p596zgf", params).then(function(res) {
                         alert("success" + res.status);
                     })
         }
